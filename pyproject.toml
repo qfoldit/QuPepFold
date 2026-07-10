@@ -1,0 +1,25 @@
+[build-system]
+requires = [
+    "setuptools>=68",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "qupepfold"
+version = "0.6.1"
+description = "Quantum peptide folding using hybrid quantum-classical CVaR-VQE"
+requires-python = ">=3.11"
+
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "qiskit",
+    "qiskit-aer"
+]
+
+
+[tool.setuptools.packages.find]
+where = ["."]
